@@ -18,34 +18,13 @@ header {
 
 h1 {
   margin: 0 auto;
-  color: red;
+  color: #F5F7F9;
 }
 
 div {
   width:100%;
 }
 
-form {
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-}
-input {
-  margin: 10px 25%;
-  /*height: 30px;*/
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 10px;
-}
-button {
-  margin: 0 auto;
-  /*width: 150px;*/
-  border: none;
-  border-radius: 15px;
-  padding: 10px 15px;
-  background-color: red;
-  color: white;
-}
 section {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#89f7fe+0,60abf8+44,66a6ff+100 */
   background: #89f7fe; /* Old browsers */

@@ -20,9 +20,8 @@ app.post('/add', (req, res) => {
   const num = req.body.num;
   let text = ''
 
-  if ((num.length > 0) && (!isNaN(num))){
     if(num == randomNumber) {
-      text = "Brawo! Zgadłeś wylosowaną liczbę"
+      text = "Twoja liczba to: " + num + ". Zgadłeś wylosowaną liczbę"
     }
     else if (num < randomNumber) {
       text = "Twoja liczba to: " + num + ". Podana przez Ciebie liczba jest mniejsza od wylosowanej"
@@ -30,12 +29,10 @@ app.post('/add', (req, res) => {
     else {
       text = "Twoja liczba to: " + num + ". Podana przez Ciebie liczba jest większa od wylosowanej"
     }
-  }
-  else {
-    text = "Podane przez Ciebie wyrażenie nie jest liczbą"
-  }
 
   res.json({
-    text
+    text, randomNumber
   });
+
+
 })

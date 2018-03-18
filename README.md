@@ -6,5 +6,3 @@
 5. Aplikacja po stronie klienta powinna wyświetlić historię komunikacji z serwerem. Np. wysłana liczba - wynik.
 
 6. Serwer może tylko podpowiadać czy liczba jest za duża, za mała lub dać odpowiedź o odgadnięciu liczby.
-
-W razie pytań proszę pisać lub dzwonić (505558895).
