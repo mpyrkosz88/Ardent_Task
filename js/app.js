@@ -3,7 +3,7 @@ $(function(){
 const ul = $('ul');
 let min = 1
 let max = 10000;
-let liczba = Math.floor(Math.random() * 10000);
+let number = Math.floor(Math.random() * 10000);
 
 const checkfunction = (num) => {
     $.ajax({
@@ -23,22 +23,22 @@ const checkfunction = (num) => {
 }
 
 const myFunc = (randomNumber) => {
-  if(liczba == randomNumber) {
-    return liczba
+  if(number == randomNumber) {
+    return number
   }
   else if (liczba < randomNumber) {
-    min = liczba;
-    liczba =  Math.floor((min + max)/2)
+    min = number;
+    number =  Math.floor((min + max)/2)
     return checkfunction(liczba)
   }
-  else if ( liczba > randomNumber ){
-    max = liczba
-    liczba = Math.floor((min + max)/2)
-    return checkfunction(liczba)
+  else if ( number > randomNumber ){
+    max = number
+    number = Math.floor((min + max)/2)
+    return checkfunction(number)
   }
 }
 
-checkfunction(liczba);
+checkfunction(number);
 
 });
 
